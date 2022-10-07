@@ -6,6 +6,7 @@
 ul {
 	margin: 0;
 	list-style: none;
+	padding: 0;
 }
 li {
 	padding-left: 0;
@@ -13,6 +14,9 @@ li {
 a {
 	text-decoration: none;
 	color: inherit;
+}
+p {
+	margin: 0;
 }
 body {
 	font-family: 'Inter', sans-serif;
@@ -145,4 +149,203 @@ body {
 	font-size: 12px;
 	line-height: 15px;
 	margin: auto 0;
+}
+.about-bike {
+	display: flex;
+	gap: 60px;
+}
+.about-bike__left {
+	flex-basis: 570px;
+	object-fit: cover;
+}
+.about-bike__right {
+}
+.about-bike__right-items {
+	max-width: 490px;
+}
+
+.about-bike__right-items + .about-bike__right-items {
+	margin-top: 50px;
+}
+.about-bike__right-title {
+	margin: 0 0 10px;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 19px;
+	text-transform: uppercase;
+}
+.about-bike__right-subtitle {
+	margin-top: 10px;
+	max-width: 450px;
+}
+.characterstics {
+	margin: 150px 0;
+}
+
+.characterstics__head {
+	margin: 0 0 40px;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 19px;
+	text-transform: uppercase;
+}
+.characterstics__inner {
+	display: flex;
+}
+.characterstics__items {
+	flex-basis: 570px;
+}
+.characterstics__items + .characterstics__items {
+	padding-top: 30px;
+}
+.characterstics__list {
+}
+.characterstics__title {
+	padding: 2px 0 3px;
+	text-transform: uppercase;
+	background-color: #131313;
+	color: #fff;
+	font-weight: 700;
+	margin: 13px 0;
+}
+.characterstics__line {
+	display: flex;
+	padding-top: 5px;
+}
+.characterstics__name {
+	flex-basis: 285px;
+	padding-right: 20px;
+}
+.characterstics__descr {
+	flex-basis: 285px;
+}
+.characterstics__img {
+	align-self: center;
+	margin-left: 60px;
+}
+.slider {
+	margin-bottom: 50px;
+}
+
+.slider__items .slick-dots {
+	top: 0;
+}
+.slider__item {
+	padding-left: 50px;
+}
+
+.bike {
+	margin: 50px 0 100px;
+}
+.price__inner {
+	position: relative;
+}
+.form {
+	max-width: 420px;
+}
+.form__title {
+	margin-bottom: 40px;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 19px;
+	text-transform: uppercase;
+}
+.form__text {
+	max-width: 300px;
+	margin-bottom: 30px;
+}
+
+.form__input-name,
+.form__input-phone {
+	width: 100%;
+	border: none;
+	border-bottom: 1px solid #131313;
+	padding: 10px;
+	margin-bottom: 20px;
+	outline: none;
+}
+.form__input-name::placeholder,
+.form__input-phone::placeholder,
+.form__input-text {
+	color: #6f6f6f;
+	opacity: 0.5;
+}
+.form__input-text {
+	margin-bottom: 10px;
+}
+.form__label-box {
+	display: flex;
+	gap: 23px;
+	margin-bottom: 50px;
+}
+.form__label {
+}
+.form__input-radio {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+}
+.form__input-radio:checked + .form__bike {
+	display: block;
+}
+.form__bike {
+	display: none;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.form__bike-img {
+}
+.form__bike-price {
+	font-size: 32px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 220px;
+	height: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid #ff4040;
+	border-radius: 50%;
+}
+.form__bike-price::after {
+	content: '';
+	position: absolute;
+	width: 220px;
+	height: 100px;
+	border: 1px solid #ff4040;
+	border-radius: 50%;
+	top: 12px;
+	left: 0;
+}
+.form__radio-style {
+	width: 80px;
+	height: 12px;
+	border-radius: 30px;
+}
+.form__radio-style--grey {
+	background: #6f6f6f;
+}
+.form__radio-style--white {
+	background: #ffffff;
+	border: 1px solid #6f6f6f;
+}
+.form__radio-style--red {
+	background: #ff4040;
+}
+.form__btn {
+	background-color: #131313;
+	padding: 28px 81px;
+	border: none;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 24px;
+	letter-spacing: 1.1em;
+	cursor: pointer;
 }
